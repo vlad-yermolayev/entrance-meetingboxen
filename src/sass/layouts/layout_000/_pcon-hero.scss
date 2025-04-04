@@ -1,0 +1,31 @@
+.pcon-hero {
+    .container {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        padding: 50px 15px 20px;
+    }
+
+    &__text {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        h2 {
+            font-size: 26px;
+            font-weight: 500;
+            color: #1A1A1A;
+        }
+
+        p {
+            font-size: 16px;
+            color: #5D5D5D;
+            line-height: 1.6;
+        }
+    }
+
+    &__img {
+        display: flex;
+        justify-content: center;
+    }
+}

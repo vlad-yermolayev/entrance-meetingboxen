@@ -1,0 +1,160 @@
+.footer {
+    background-color: #1A1A1A;
+    padding: 40px 0 30px;
+
+    &__top {
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            padding-bottom: 30px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+    }
+
+    &__top-links {
+        ul {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+
+            li {
+
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+
+                .title-link {
+                    font-size: 16px;
+                    font-weight: 500;
+                    color: $white;
+                    text-decoration: none;
+                }
+
+                a {
+                    font-size: 14px;
+                    color: #BABABA;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+
+
+    &__top-contacts {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        &>span {
+            font-size: 16px;
+            font-weight: 500;
+            color: $white;
+        }
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+
+            li {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                font-size: 14px;
+                color: #BABABA;
+                a {
+                    color: #BABABA;
+                    text-decoration: none;
+                }
+
+                &:nth-of-type(1) {
+                    &::before {
+                        content: url('../img/call-icon.svg');
+                    }
+                }
+
+                &:nth-of-type(2) {
+                    &::before {
+                        content: url('../img/mail-icon.svg');
+                    }
+                }
+
+                &:nth-of-type(3) {
+                    &::before {
+                        content: url('../img/pin-icon.svg');
+                    }
+                }
+            }
+        }
+    }
+
+    &__bottom {
+        .container {
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: center;
+            gap: 20px;
+            padding-top: 30px;
+        }
+    }
+
+    &__bottom-info {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 20px;
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+
+            li {
+                a {
+                    font-size: 14px;
+                    color: #BABABA;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+
+    &__bottom-social-media {
+        .social-media {
+        
+            li {
+        
+                &:nth-of-type(1) {
+                    a {
+                        &::before {
+                            content: url('../img/linkedin-footer-icon.svg');
+                        }
+                    }
+                }
+        
+                &:nth-of-type(2) {
+                    a {
+                        &::before {
+                            content: url('../img/facebook-footer-icon.svg');
+                        }
+                    }
+                }
+        
+                &:nth-of-type(3) {
+                    a {
+                        &::before {
+                            content: url('../img/instagram-footer-icon.svg');
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &__bottom-copyright {
+        font-size: 14px;
+        color: $white;
+    }
+}

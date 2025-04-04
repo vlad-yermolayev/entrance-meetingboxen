@@ -1,0 +1,126 @@
+.header {
+    &__top {
+        background-color: #F5F5F5;
+        .container {
+            min-height: 35px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+
+    &__top-contacts {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        span {
+            font-size: 10px;
+            color: #C1C1C1;
+        }
+
+        ul {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            li {
+                display: flex;
+                a {
+                    font-size: 10px;
+                    color: #4C4C4C;
+                    text-decoration: none;
+                }
+
+                &:not(:last-child) {
+
+                    &::after {
+                        content: '';
+                        display: flex;
+                        width: 1px;
+                        height: 10px;
+                        background-color: #E7E7E7;
+                        border-radius: 20px;
+                        margin-left: 10px;
+                    }
+                }
+            }
+        }
+        
+    }
+
+    &__top-media {
+        display: none;
+
+        .social-media {
+        
+            li {
+        
+                &:nth-of-type(1) {
+                    a {
+                        &::before {
+                            content: url('../img/linkedin-header-icon.svg');
+                        }
+                    }
+                }
+        
+                &:nth-of-type(2) {
+                    a {
+                        &::before {
+                            content: url('../img/facebook-header-icon.svg');
+                        }
+                    }
+                }
+        
+                &:nth-of-type(3) {
+                    a {
+                        &::before {
+                            content: url('../img/instagram-header-icon.svg');
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &__bottom {
+        .container {
+            min-height: 70px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #E7E7E7;
+        }
+    }
+
+    &__logo {
+        display: flex;
+    }
+
+    &__nav {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+
+        ul {
+            display: none;
+        }
+        
+        button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            background-color: transparent;
+            border: none;
+
+            &::before {
+                content: url('../img/menu-icon.svg');
+            }
+        }
+
+        .get-quote {
+            display: none;
+        }
+    }
+}

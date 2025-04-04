@@ -1,0 +1,21 @@
+.pcon-hero {
+    .container {
+        flex-direction: row;
+        gap: 50px;
+        padding: 70px 50px 20px;
+    }
+
+    &__text {
+        width: 50%;
+        gap: 20px;
+
+        h2 {
+            font-size: 30px;
+        }
+    }
+
+    &__img {
+        width: 50%;
+        padding-top: 30px;
+    }
+}
